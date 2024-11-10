@@ -16,8 +16,11 @@ public class Main {
         product.price = sc.nextDouble();
         System.out.print("quantidade em estoque: ");
         product.quantity= sc.nextInt();
+        //Utilizadno toString. ele serve para converter o objeto para String.
 
-        System.out.print(product.name + "," + product.price + "," + product.quantity);
+
+        System.out.println(product);//nessa situação não precisamos declarar o toString, o java entende o contexto e imprime o nome do produto, declarado em toString.
+        //quando declaramos product.toString, ele imprimirá o nome do produto, como nós declaramos.
 
         sc.close();
     }

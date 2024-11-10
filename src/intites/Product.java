@@ -9,6 +9,7 @@ public class Product {
 
     //Funções da classe.
     public double totalValueInStock(){
+
         return price * quantity;
     }
     public void addProducts (int quantity){
@@ -19,5 +20,11 @@ public class Product {
     public void removeProducts (int quantity){
 
         this.quantity -= quantity;
+    }
+    public String toString() {
+        //sobrepondo o toString padrão, usando um novo toString.
+        return name + ", $ " + String.format("%.2f", price) + ", " + quantity + " units , total: $" + String.format("%.2f", totalValueInStock());
+        /*Dessa forma toda vez que declararmos product.toString(); o nome do produto é declarado.*/
+        //No return ja vai retornar com todas as atribuições que declaramos acima, quadno chamarmos o metodo product.toString.
     }
 }
