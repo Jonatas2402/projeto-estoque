@@ -1,4 +1,4 @@
-package intites;
+package entites;
 //Essa classe tem por objetivo executar uma operação de estoque.
 //Realizando entrada e saida de produtos e sua quantidade.
 public class Product {
@@ -22,7 +22,7 @@ public class Product {
     }
     public String toString() {
         //sobrepondo o toString padrão, usando um novo toString.
-        return name + ", $ " + String.format("%.2f", price) + ", " + quantity + " units , total: $" + String.format("%.2f", totalValueInStock());
+        return name + ", $ " + String.format("%.2f", price) + ", " + quantity + " units, total: $" + String.format("%.2f", totalValueInStock());
         /*Dessa forma toda vez que declararmos product.toString(); o nome do produto é declarado.*/
         //No return ja vai retornar com todas as atribuições que declaramos acima, quadno chamarmos o metodo product.toString.
     }
